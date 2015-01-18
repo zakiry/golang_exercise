@@ -7,13 +7,14 @@ func main() {
 	fmt.Scan(&n)
 
 	for i := 1; i <= n; i++ {
-		if i%3 == 0 && i%5 == 0 {
+		switch true {
+		case i%5 == 0 && i%3 == 0:
 			fmt.Println("FizzBuzz")
-		} else if i%3 == 0 {
-			fmt.Println("Fizz")
-		} else if i%5 == 0 {
+		case i%5 == 0:
 			fmt.Println("Buzz")
-		} else {
+		case i%3 == 0:
+			fmt.Println("Fizz")
+		default:
 			fmt.Println(i)
 		}
 	}
