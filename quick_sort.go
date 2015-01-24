@@ -16,7 +16,6 @@ func q_sort(array []int, left int, right int) {
 	pivot := array[left]
 	mid := left + 1
 
-	fmt.Printf("%v, %v, %v\n", left, right, pivot)
 	fmt.Println(array)
 
 	for i := mid; i < right; i++ {
